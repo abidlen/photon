@@ -49,7 +49,7 @@ The commands in this section assume `sda` as disk device.
 
     In this case we have the partition `2` as last, then we extend the partition to 100% of the remaining size:
     
-    	(parted) resizepart 2 100%
+    	(parted) resizepart 2 100% - In my testing, using either a percentage or an actual value did not work. I would get a Token error. I had to just use  resizepart 2, and then enter the end size when prompted.
 
 1. Expand the filesystem to the new size:
 	
